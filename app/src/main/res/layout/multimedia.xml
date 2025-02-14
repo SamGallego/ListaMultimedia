@@ -6,6 +6,7 @@
     android:padding="10dp"
     android:gravity="center_vertical">
 
+    <!-- Contenedor para título y botón -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,9 +27,11 @@
             android:text="Ver" />
     </LinearLayout>
 
+    <!-- Contenedor del fragmento (inicialmente invisible) -->
     <FrameLayout
         android:id="@+id/itemFragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
 </LinearLayout>
